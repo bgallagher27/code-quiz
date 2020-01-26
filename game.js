@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+    let totalSeconds = 90;
+
+
     let questions = [
         "What kind of tag is used to wrap Javascript text within a page's HTML?",
         "Which of the below is NOT an acceptable method for declaring a variable in Javascript?",
@@ -40,6 +43,15 @@ $(document).ready(function() {
         $("#choice3").on("click" , function() {
             showQuestionTwo();
         });
+        $("#choice1").on("click" , function() {
+            totalSeconds -= 10;
+        });
+        $("#choice2").on("click" , function() {
+            totalSeconds -= 10;
+        });
+        $("#choice4").on("click" , function() {
+            totalSeconds -= 10;
+        });
     };
 
     function showQuestionTwo() {
@@ -65,7 +77,16 @@ $(document).ready(function() {
             window.location.href = "end.html";
         })
     };
-    
+
+    setInterval(function() {
+        totalSeconds--;
+        $("#timer").text(totalSeconds);
+        if (totalSeconds ===0) {
+            window.location.href = "end.html";
+        };
+    }, 1000);
+
+
     showQuestionOne();
 
 });
