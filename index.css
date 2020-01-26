@@ -12,6 +12,10 @@ h1.title-header {
     font-size: 70px;
 }
 
+p.btn {
+    width: 25%;
+}
+
 header.clock {
     text-align: right;
     padding: 20px;
@@ -19,4 +23,10 @@ header.clock {
 
 header {
     font-size: 25px;
+}
+
+div.score-display {
+    border-width: 15px;
+    padding: 10px;
+    border-color: #3d3333;
 }
