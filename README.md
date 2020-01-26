@@ -4,14 +4,14 @@ This app runs a short code quiz that will require intermediate knowledge of basi
 
 ## Things To Know
 
-*This is a timed quiz, allowing 90 seconds to answer 3 coding questions (30 seconds per question).
+-This is a timed quiz, allowing 90 seconds to answer 3 coding questions (30 seconds per question).
 
-*Selecting the correct answer will progress to the next question.
+-Selecting the correct answer will progress to the next question.
 
-*Selecting an incorrect answer will result in a 10-second penalty.
+-Selecting an incorrect answer will result in a 10-second penalty.
 
-*If time runs out, the questions will cease.
+-If time runs out, the questions will cease.
 
-*Selecting the correct answer on the last question will display your score (in seconds remaining).
+-Selecting the correct answer on the last question will display your score (in seconds remaining).
 
-*The quiz will take yur initials (or whichever identifying info you choose to provide), and post it along with your score on the "High Scores" leaderboard.
+-The quiz will take yur initials (or whichever identifying info you choose to provide), and post it along with your score on the "High Scores" leaderboard.
