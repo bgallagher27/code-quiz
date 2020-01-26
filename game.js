@@ -1,4 +1,4 @@
-
+$(document).ready(function() {
 
     let questions = [
         "What kind of tag is used to wrap Javascript text within a page's HTML?",
@@ -30,14 +30,16 @@
         "CSS",
     ];
 
-    showQuestionOne();
-
     function showQuestionOne() {
         $("#question").text(questions[0]);
         $("#choice1").text(firstChoice[0]);
         $("#choice2").text(secondChoice[0]);
         $("#choice3").text(thirdChoice[0]);
         $("#choice4").text(fourthChoice[0]);
+
+        $("#choice3").on("click" , function() {
+            showQuestionTwo();
+        });
     };
 
     function showQuestionTwo() {
@@ -46,6 +48,10 @@
         $("#choice2").text(secondChoice[1]);
         $("#choice3").text(thirdChoice[1]);
         $("#choice4").text(fourthChoice[1]);
+
+        $("#choice2").on("click" , function() {
+            showQuestionThree();
+        })
     };
 
     function showQuestionThree() {
@@ -54,5 +60,12 @@
         $("#choice2").text(secondChoice[2]);
         $("#choice3").text(thirdChoice[2]);
         $("#choice4").text(fourthChoice[2]);
+
+        $("#choice4").on("click" , function() {
+            window.location.href = "end.html";
+        })
     };
-  
+    
+    showQuestionOne();
+
+});
