@@ -17,20 +17,20 @@ $(document).ready(function() {
 
     let secondChoice = [
         "<link>",
-        "set",
+        "const",
         "Javascript",
     ];
 
     let thirdChoice = [
         "<script>",
-        "const",
-        "JQuery",
+        "set",
+        "CSS",
     ];
 
     let fourthChoice = [
         "<br>",
         "var",
-        "CSS",
+        "JQuery",
     ];
 
     function showQuestionOne() {
@@ -61,9 +61,18 @@ $(document).ready(function() {
         $("#choice3").text(thirdChoice[1]);
         $("#choice4").text(fourthChoice[1]);
 
-        $("#choice2").on("click" , function() {
+        $("#choice3").on("click" , function() {
             showQuestionThree();
         })
+        $("#choice1").on("click" , function() {
+            totalSeconds -= 10;
+        });
+        $("#choice2").on("click" , function() {
+            totalSeconds -= 10;
+        });
+        $("#choice4").on("click" , function() {
+            totalSeconds -= 10;
+        });
     };
 
     function showQuestionThree() {
@@ -73,9 +82,19 @@ $(document).ready(function() {
         $("#choice3").text(thirdChoice[2]);
         $("#choice4").text(fourthChoice[2]);
 
-        $("#choice4").on("click" , function() {
+        $("#choice3").on("click" , function() {
             window.location.href = "end.html";
-        })
+            localStorage.setItem(totalSeconds);
+        });
+        $("#choice1").on("click" , function() {
+            totalSeconds -= 10;
+        });
+        $("#choice2").on("click" , function() {
+            totalSeconds -= 10;
+        });
+        $("#choice4").on("click" , function() {
+            totalSeconds -= 10;
+        });
     };
 
     setInterval(function() {
