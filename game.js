@@ -79,14 +79,18 @@ $(document).ready(function() {
     };
 
     function endQuestions() {
-        window.location.href = "end.html";
+        clearInterval(scoreClock);
+        let initials = prompt("Please enter your initials");
+        $("#question").text("Congratulations " + initials + ", your score is " + totalSeconds + "!");
+        $(".btn-primary").remove();
+        localStorage.setItem(initials + totalSeconds);
     };
 
-    setInterval(function() {
+    let scoreClock = setInterval(function() {
         totalSeconds--;
         $("#timer").text(totalSeconds);
-        if (totalSeconds ===0) {
-            window.location.href = "end.html";
+        if (totalSeconds === 0) {
+            endQuestions();
         };
     }, 1000);
 
