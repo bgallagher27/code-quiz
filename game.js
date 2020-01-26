@@ -63,15 +63,6 @@ $(document).ready(function() {
 
         $("#choice3").on("click" , function() {
             showQuestionThree();
-        })
-        $("#choice1").on("click" , function() {
-            totalSeconds -= 10;
-        });
-        $("#choice2").on("click" , function() {
-            totalSeconds -= 10;
-        });
-        $("#choice4").on("click" , function() {
-            totalSeconds -= 10;
         });
     };
 
@@ -83,18 +74,12 @@ $(document).ready(function() {
         $("#choice4").text(fourthChoice[2]);
 
         $("#choice3").on("click" , function() {
-            window.location.href = "end.html";
-            localStorage.setItem(totalSeconds);
+            endQuestions();
         });
-        $("#choice1").on("click" , function() {
-            totalSeconds -= 10;
-        });
-        $("#choice2").on("click" , function() {
-            totalSeconds -= 10;
-        });
-        $("#choice4").on("click" , function() {
-            totalSeconds -= 10;
-        });
+    };
+
+    function endQuestions() {
+        window.location.href = "end.html";
     };
 
     setInterval(function() {
