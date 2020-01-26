@@ -1,4 +1,5 @@
-$(document).ready(function() {
+
+
     let question = $("#question");
     let choices = Array.from($(".choice-text"));
     let currentQuestion = {};
@@ -33,4 +34,17 @@ $(document).ready(function() {
         },
     ]
 
-});
+    let maxQuestions = 3;
+
+    function startGame() {
+        questionCounter = 0;
+        availableQuestions = [...questions];
+        getNewQuestion();
+    };
+
+    function getNewQuestion() {
+
+    };
+
+
+    startGame();
