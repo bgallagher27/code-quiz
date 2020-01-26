@@ -10,21 +10,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-    <header class = "clock">Time: <span id = "timer">90</span></header>
-    <div class="container">
-        <div id="quiz-game">
-          <h2 id = "question">Question Text</h2>
-          <br>
-          <p type ="button" class = "btn btn-primary" id = "choice1">Choice 1</p>
-          <br>
-          <p type ="button" class = "btn btn-primary" id = "choice2">Choice 2</p>
-          <br>
-          <p type ="button" class = "btn btn-primary" id = "choice3">Choice 3</p>
-          <br>
-          <p type ="button" class = "btn btn-primary" id = "choice4">Choice 4</p>
-          <br>
+    <div class = "row">
+        <div class = "col-lg-12" class = "col-md-12" class = "col-sm-12" class = "col-xs-12">
+            <header class = "clock">Time: <span id = "timer">90</span></header>
+
+            <div class = "row">
+                <div class="container" class="col-md-6" class="col-sm-12" class="col-xs-12">
+                    <h2 id = "question">Question Text</h2>
+                    <br>
+                    <p type ="button" class = "btn btn-primary" id = "choice1">Choice 1</p>
+                    <br>
+                    <p type ="button" class = "btn btn-primary" id = "choice2">Choice 2</p>
+                    <br>
+                    <p type ="button" class = "btn btn-primary" id = "choice3">Choice 3</p>
+                    <br>
+                    <p type ="button" class = "btn btn-primary" id = "choice4">Choice 4</p>
+                    <br>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
+
     <script src = "game.js"></script>
 </body>
 </html>
