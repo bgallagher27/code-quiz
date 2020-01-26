@@ -87,8 +87,10 @@ $(document).ready(function() {
         $("#choice3").remove();
         $("#choice4").remove();
         $("#choice1").on("click" , function() {
+            totalSeconds += 10;
             window.location.href = "high-scores.html";
-        localStorage.setItem(initials + totalSeconds);
+            localStorage.setItem("name" , initials);
+            localStorage.setItem("time" , totalSeconds);
         });
     };
 
