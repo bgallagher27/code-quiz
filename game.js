@@ -82,8 +82,14 @@ $(document).ready(function() {
         clearInterval(scoreClock);
         let initials = prompt("Please enter your initials");
         $("#question").text("Congratulations " + initials + ", your score is " + totalSeconds + "!");
-        $(".btn-primary").remove();
+        $("#choice1").text("See high scores!");
+        $("#choice2").remove();
+        $("#choice3").remove();
+        $("#choice4").remove();
+        $("#choice1").on("click" , function() {
+            window.location.href = "high-scores.html";
         localStorage.setItem(initials + totalSeconds);
+        });
     };
 
     let scoreClock = setInterval(function() {
