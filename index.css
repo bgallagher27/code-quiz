@@ -4,6 +4,10 @@
     margin: 0 auto;
     color: #3d3333;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    padding: 175px;
+    padding: 130px;
     text-align: center;
+}
+
+h1.title-header {
+    font-size: 70px;
 }
