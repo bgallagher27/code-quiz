@@ -11,3 +11,12 @@
 h1.title-header {
     font-size: 70px;
 }
+
+header.clock {
+    text-align: right;
+    padding: 20px;
+}
+
+header {
+    font-size: 25px;
+}
